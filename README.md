@@ -13,20 +13,14 @@ Consultas em linguagem natural que combinam cálculos sobre arquivos completos, 
 
 ## Equipe
 
-Projeto desenvolvido pelo **Grupo 1**, no cenário de Contratações Públicas
-do RJ da Residência TIC em Trilhas.
+**Grupo 1 — Contratações Públicas do RJ**
 
-| Integrante | GitHub |
-| --- | --- |
-| Calvin Costa | [@Calvin-Vinicius](https://github.com/Calvin-Vinicius) |
-| Eridalgo Ramos | [@EridalgoRamos](https://github.com/EridalgoRamos) |
-| Felipe Teixeira | [@Felipetds](https://github.com/Felipetds) |
-| Janice Santos | [@Janice977](https://github.com/Janice977) |
-| Luiz Carlos | [@luizcarlos001](https://github.com/luizcarlos001) |
-| Maria Eduarda | [@eduardaribs](https://github.com/eduardaribs) |
-
-Esta é a versão de portfólio de **Maria Eduarda**, com os créditos
-do desenvolvimento coletivo preservados.
+- [Calvin Costa](https://github.com/Calvin-Vinicius)
+- [Eridalgo Ramos](https://github.com/EridalgoRamos)
+- [Felipe Teixeira](https://github.com/Felipetds)
+- [Janice Santos](https://github.com/Janice977)
+- [Luiz Carlos](https://github.com/luizcarlos001)
+- [Maria Eduarda](https://github.com/eduardaribs)
 
 ## Cenário escolhido
 
