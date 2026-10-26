@@ -1,0 +1,33 @@
+{
+  "branch": "fix/respostas-explicativas-20261021T192459760154Z",
+  "commit_base": "746c4941171ef5b25193a259d36951bf23a8c047",
+  "codigo_ainda_sem_commit": false,
+  "testes_locais": {
+    "aprovados": 754,
+    "llm_desmarcados": 7,
+    "arquivo": "testes_locais.txt",
+    "sha256": "bcfe5cc5841a41714500403ace8cfbe98650ca2c283fabd76b2bf630630aca48"
+  },
+  "integracao_real": {
+    "aprovados": 7,
+    "arquivo": "integracao_real.txt",
+    "sha256": "4113737168e0c1ca31bf810b5ad6246b5cef68bd79058334338e70489bb1d6d8"
+  },
+  "interface": {
+    "run_id": "8474c27d",
+    "query_id": "q_10d777d6",
+    "pergunta": "No PE 038/26/2026, quantos itens foram homologados?",
+    "resposta_observada": "No PE 038/26/2026, foram homologados 8 itens.",
+    "formato_curto_sem_instrucao_adicional": true,
+    "consulta_visivel_no_historico": true,
+    "conferencia": "Relato e saída da interface enviados na sessão."
+  },
+  "publicacao": {
+    "pull_request": 52,
+    "url": "https://github.com/rag-grande-desafio-grupo1-cenario-1/repositorio1/pull/52",
+    "commit_codigo": "f3e25d01a8a6fe0c5aac33a86c338346696830cb",
+    "commit_integracao": "2365d6bb01e937bc02a3e55a2c034eca362a9fe6",
+    "integracao_confirmada_no_remoto": true,
+    "codigo_comparado_sem_diferencas": true
+  }
+}

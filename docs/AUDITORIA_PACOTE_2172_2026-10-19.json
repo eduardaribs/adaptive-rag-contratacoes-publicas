@@ -1,0 +1,22 @@
+{
+  "chunks": 2172,
+  "sha256_chunks": "dcdcc7a0f8e34da1d0824b5322b6e37306c34e2d53d107c1ca067bc2771c8404",
+  "naturezas": {
+    "estruturada": 1358,
+    "normativa": 217,
+    "agregada": 519,
+    "conversacional": 78
+  },
+  "sensibilidade": {
+    "publico": 2094,
+    "restrito": 78
+  },
+  "campos_ausentes_ou_vazios": {
+    "ano": 295,
+    "vigencia": 1664,
+    "fornecedor": 2164,
+    "orgao": 314,
+    "municipio": 814
+  },
+  "arquivos_brutos_com_hash_correspondente": 8
+}

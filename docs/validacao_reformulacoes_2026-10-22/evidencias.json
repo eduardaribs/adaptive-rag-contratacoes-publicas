@@ -1,0 +1,27 @@
+{
+  "testes_locais": {
+    "aprovados": 803,
+    "duracao_segundos": 14.91
+  },
+  "integracao_real": {
+    "aprovados": 7,
+    "duracao_segundos": 49.94
+  },
+  "origem_registros": "correcao_escopo_encaminhamento_20261022T030047039352Z",
+  "falhas_anteriores_preservadas": true,
+  "publicacao": "pendente",
+  "interface": "ainda_nao_iniciada_neste_ambiente",
+  "versoes": {
+    "openai": "2.54.0",
+    "pydantic": "2.14.1",
+    "gradio": "6.30.0",
+    "faiss-cpu": "1.15.1",
+    "nltk": "3.9.1"
+  },
+  "casos_exercitados_durante_as_correcoes": {
+    "explicacao_homologacao": "06d1b352",
+    "identificacao_itens": "e359a86f",
+    "fornecedores_sem_repeticao": "528e37dd",
+    "contagem_e_lei": "e154af61"
+  }
+}

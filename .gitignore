@@ -1,0 +1,23 @@
+# Environment variables
+.env
+
+# Python / Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data and logs
+data/raw/
+data/inventory/raw/
+index/
+logs/
+.gradio/
+data/indices/
+data/processed/
+
+# Feedback gerado pela interface
+data/feedback/*.jsonl
+
+# Cópias históricas preservadas fora do Git
+/backup_artefatos_20261014/
+/corpus_v3_revisado_2026-10-13/data/

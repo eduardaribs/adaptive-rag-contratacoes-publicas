@@ -1,0 +1,209 @@
+scenario_id: contratacoes-rj
+version: v3
+
+description: >
+  Corpus do Cenário 1 — Contratações Públicas do Estado do Rio de Janeiro.
+  Reúne fontes oficiais e comunicações sintéticas identificadas como simulação.
+
+bases:
+
+  - base_id: estruturada_pncp_rj
+    natureza: estruturada
+    fonte: Portal Nacional de Contratações Públicas (PNCP)
+    acesso: API pública de consulta
+    endpoint: /v1/contratacoes/publicacao
+
+    selecao_deterministica:
+      uf: RJ
+      codigoModalidadeContratacao: 6
+      dataInicial: '20260301'
+      dataFinal: '20260331'
+      paginacao: todas_as_paginas
+
+    volume:
+      registros: 1358
+      ids_unicos: 1358
+
+    formato: JSON
+
+    arquivo_local: data/raw/v3/estruturada/pncp/rj/pregao_eletronico/2026-03/contratacoes_publicacao.json
+
+    licenca: verificar_condicoes_de_reutilizacao_na_fonte
+    sensitivity_default: publico_com_verificacao_de_dados_pessoais
+    campo_vigencia: dataPublicacaoPncp
+    chunking_sugerido: um_registro_por_documento
+
+    metadados_extras:
+      - numeroControlePNCP
+      - orgaoEntidade
+      - unidadeOrgao
+      - objetoCompra
+      - modalidadeId
+      - valorTotalEstimado
+      - valorTotalHomologado
+
+    arquivos:
+      - path: estruturada/pncp/rj/pregao_eletronico/2026-03/contratacoes_publicacao.json
+        sha256: 681a935887201bf87073c0bc80979a388929adcc45f9de86e332e2e23cab565e
+        origem: Portal Nacional de Contratações Públicas (PNCP)
+
+    volume_alvo: 1
+
+
+  - base_id: normativa_lei_14133
+    natureza: normativa
+    fonte: Presidência da República — Planalto
+    acesso: página pública oficial
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
+
+    selecao_deterministica:
+      documento: Lei nº 14.133/2021
+      criterio: URL oficial fixa
+
+    volume:
+      documentos: 1
+      caracteres_extraidos: 289010
+
+    formato: HTML
+
+    arquivo_local: data/raw/v3/normativa/federal/lei_14133_2021/lei_14133_2021.html
+
+    licenca: verificar_condicoes_de_reutilizacao_na_fonte
+    sensitivity_default: publico
+    campo_vigencia: verificar_redacao_vigente_na_fonte
+    chunking_sugerido: por_artigo_e_paragrafo
+
+    metadados_extras:
+      - numero_lei
+      - artigo
+      - paragrafo
+      - url_fonte
+      - data_coleta
+
+    arquivos:
+      - path: normativa/federal/lei_14133_2021/lei_14133_2021.html
+        sha256: b5ea9780f22f4381887c1c1f341e8edb945f50b37010f78f27ade544b3d308f2
+        origem: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
+
+    volume_alvo: 1
+
+
+  - base_id: conversacional_atas_pncp
+    natureza: conversacional
+    fonte: Portal Nacional de Contratações Públicas (PNCP)
+    acesso: API pública e documentos oficiais
+
+    selecao_deterministica:
+      atas:
+        - cnpj_orgao: '33781055000135'
+          ano_compra: 2026
+          sequencial_compra: 227
+          sequencial_ata: 1
+          arquivo_local: data/raw/v3/conversacional/atas/fiocruz/2026/ata_00001.pdf
+
+        - cnpj_orgao: '00394544000185'
+          ano_compra: 2026
+          sequencial_compra: 359
+          sequencial_ata: 1
+          arquivo_local: data/raw/v3/conversacional/atas/ministerio_saude/2026/ata_00137.pdf
+
+        - cnpj_orgao: '15126437000305'
+          ano_compra: 2026
+          sequencial_compra: 676
+          sequencial_ata: 1
+          arquivo_local: data/raw/v3/conversacional/atas/ebserh/2026/ata_00191.pdf
+
+    volume:
+      documentos: 3
+      paginas: 30
+
+    formato: PDF
+
+    licenca: verificar_condicoes_de_reutilizacao_na_fonte
+    sensitivity_default: requer_mascaramento_de_dados_pessoais
+    campo_vigencia: dataVigenciaInicio_e_dataVigenciaFim
+    chunking_sugerido: por_secao_com_identificacao_da_ata
+
+    metadados_extras:
+      - numeroControlePNCP
+      - numeroAtaRegistroPreco
+      - orgao
+      - objetoCompra
+      - fornecedor
+      - url_fonte
+
+    arquivos:
+      - path: conversacional/atas/fiocruz/2026/ata_00001.pdf
+        sha256: 3372ad5388cb87cc0fdd0d604fdc82f343b0c55d3f97b1d295ec56c3004dfb2a
+        origem: Portal Nacional de Contratações Públicas (PNCP)
+
+      - path: conversacional/atas/ministerio_saude/2026/ata_00137.pdf
+        sha256: ca206d7d30d9dff83c22e272e34f2884046c589a78c5dbf40e94f6e9e96029d7
+        origem: Portal Nacional de Contratações Públicas (PNCP)
+
+      - path: conversacional/atas/ebserh/2026/ata_00191.pdf
+        sha256: 53c2ead7aa1f9d72b0845f773dab8ea6c2d7bf546ca4dbdd9e9c1612c834762a
+        origem: Portal Nacional de Contratações Públicas (PNCP)
+
+    volume_alvo: 3
+
+
+  - base_id: conversacional_comunicacoes_sinteticas
+    natureza: conversacional
+    fonte: simulacao_criada_pela_equipe_com_apoio_de_ia
+    acesso: arquivo_local
+
+    selecao_deterministica:
+      processo_ficticio: SIM-RJ-001
+      arquivo_local: data/raw/v3/conversacional/comunicacoes_sinteticas/troca_mensagens_material_escritorio_001.txt
+
+    volume:
+      documentos: 1
+      mensagens: 3
+
+    formato: TXT
+
+    licenca: conteudo_sintetico_do_projeto
+    sensitivity_default: sintetico_sem_dados_pessoais_reais
+    campo_vigencia: data_ficticia_da_mensagem
+    chunking_sugerido: por_mensagem
+
+    metadados_extras:
+      - processo_ficticio
+      - numero_mensagem
+      - remetente_ficticio
+      - natureza_sintetica
+
+    observacao: >
+      Conteudo inteiramente ficticio para testes. Nunca apresentar como
+      evidencia de contratacao ou comunicacao publica real.
+
+    arquivos:
+      - path: conversacional/comunicacoes_sinteticas/troca_mensagens_material_escritorio_001.txt
+        sha256: 23cd93d88c48397746b1aa0558b18dab0c54687c66be73034d1925e5abd92c65
+        origem: simulacao_criada_pela_equipe_com_apoio_de_ia
+
+    volume_alvo: 1
+
+
+  - base_id: agregada_pncp_rj
+    natureza: agregada
+    fonte: 'PNCP: PCA RJ 2026 e resultados PE 038/26/2026'
+    acesso: arquivo_local
+
+    selecao_deterministica:
+      pca_ano: 2026
+      pregao_id: 42498600000171-1-000757/2026
+
+    volume_alvo: 2
+    formato: CSV
+    sensitivity_default: publico_com_verificacao
+
+    arquivos:
+      - path: agregada/pca_2026_estado_rj.csv
+        sha256: 2a8e6b3bb939fb0b281fce69b8b2f077f36d77ee319f16dd632b64dca27ab75e
+        origem: 'PNCP: PCA Estado do RJ 2026; exportação recebida da equipe'
+
+      - path: agregada/itens_pe_038_26_2026.csv
+        sha256: 1a52fcc125c9d5793263339f7570d21999262e8b239fd8fd80a77e6b616daba2
+        origem: https://pncp.gov.br/editais/42498600000171/2026/757; CSV derivado de resultados

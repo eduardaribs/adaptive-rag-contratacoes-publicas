@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-8.4.2, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /content/repositorio1
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.11, platformdirs-4.13.4, typeguard-4.6.0
+collecting ... collected 7 items
+
+testes/teste_integracao.py::test_integracao_marina_arroz PASSED          [ 14%]
+testes/teste_integracao.py::test_integracao_rodrigo_software PASSED      [ 28%]
+testes/teste_integracao.py::test_integracao_consulta_normativa PASSED    [ 42%]
+testes/teste_integracao.py::test_integracao_fontes_correspondem_ao_retrieval PASSED [ 57%]
+testes/teste_integracao.py::test_integracao_respeita_top_k PASSED        [ 71%]
+testes/teste_integracao.py::test_integracao_resposta_nao_expoe_dados_pessoais PASSED [ 85%]
+testes/teste_integracao.py::test_integracao_consulta_sensivel PASSED     [100%]
+
+============================== 7 passed in 49.94s ==============================
