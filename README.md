@@ -1,22 +1,5 @@
 # Adaptive RAG para Contratações Públicas do RJ
 
-
-<!-- IDENTIFICACAO_PORTFOLIO -->
-> **Versão de portfólio de Maria Eduarda Ribeiro da Silva.**
-> Projeto desenvolvido coletivamente pelo Grupo 1 na Residência
-> TIC em Trilhas — PUC-Rio / Instituto ECOA.
-> Os créditos dos seis integrantes são preservados neste README.
->
-> [Repositório original da equipe](https://github.com/rag-grande-desafio-grupo1-cenario-1/repositorio1)
-> · [Versão de portfólio](https://github.com/eduardaribs/adaptive-rag-contratacoes-publicas)
->
-> Origem desta cópia: commit
-> `9fb63cbde47d659226808da2928ecff3e136cf41`.
-> As validações históricas documentadas foram realizadas no projeto
-> da equipe; não constituem uma nova execução nesta cópia.
-<!-- FIM_IDENTIFICACAO_PORTFOLIO -->
-
-
 **Grupo 1 · Cenário 1 · Grande Desafio de IA Generativa & RAG**
 
 Residência TIC em Trilhas — PUC-Rio · Instituto ECOA
@@ -30,14 +13,20 @@ Consultas em linguagem natural que combinam cálculos sobre arquivos completos, 
 
 ## Equipe
 
-- Calvin Vinicius Costa da Silva
-- Eridalgo Ramos da Silva
-- Felipe Teixeira da Silva
-- Janice Lira dos Santos
-- Luiz Carlos Gomes da Silva Júnior
-- Maria Eduarda Ribeiro da Silva
+Projeto desenvolvido pelo **Grupo 1**, no cenário de Contratações Públicas
+do RJ da Residência TIC em Trilhas.
 
-O desenvolvimento envolveu organização e avaliação do corpus, ingestão e metadados, recuperação, planejamento, geração, testes, observabilidade, interface e documentação.
+| Integrante | GitHub |
+| --- | --- |
+| Calvin Costa | [@Calvin-Vinicius](https://github.com/Calvin-Vinicius) |
+| Eridalgo Ramos | [@EridalgoRamos](https://github.com/EridalgoRamos) |
+| Felipe Teixeira | [@Felipetds](https://github.com/Felipetds) |
+| Janice Santos | [@Janice977](https://github.com/Janice977) |
+| Luiz Carlos | [@luizcarlos001](https://github.com/luizcarlos001) |
+| Maria Eduarda | [@eduardaribs](https://github.com/eduardaribs) |
+
+Esta é a versão de portfólio de **Maria Eduarda**, com os créditos
+do desenvolvimento coletivo preservados.
 
 ## Cenário escolhido
 
