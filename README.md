@@ -15,12 +15,12 @@ Consultas em linguagem natural que combinam cálculos sobre arquivos completos, 
 
 **Grupo 1 — Contratações Públicas do RJ**
 
-- [Calvin Costa](https://github.com/Calvin-Vinicius)
-- [Eridalgo Ramos](https://github.com/EridalgoRamos)
-- [Felipe Teixeira](https://github.com/Felipetds)
-- [Janice Santos](https://github.com/Janice977)
-- [Luiz Carlos](https://github.com/luizcarlos001)
-- [Maria Eduarda](https://github.com/eduardaribs)
+- **Calvin Costa** — [@Calvin-Vinicius](https://github.com/Calvin-Vinicius)
+- **Eridalgo Ramos** — [@EridalgoRamos](https://github.com/EridalgoRamos)
+- **Felipe Teixeira** — [@Felipetds](https://github.com/Felipetds)
+- **Janice Santos** — [@Janice977](https://github.com/Janice977)
+- **Luiz Carlos** — [@luizcarlos001](https://github.com/luizcarlos001)
+- **Maria Eduarda** — [@eduardaribs](https://github.com/eduardaribs)
 
 ## Cenário escolhido
 
